@@ -20,25 +20,25 @@
       <p>Fill in your details</p>
       <form method="post" action="">
         <label for="First Name">First Name</label>
-        <input type="text" name="First Name" id="First Name" />
+        <input type="text" name="First Name" id="First Name" placeholder="Enter first name" required/>
 
         <label for="Last Name">Last Name</label>
-        <input type="text" name="Last Name" id="Last Name" /><br />
+        <input type="text" name="Last Name" id="Last Name" placeholder="Enter Last name" required/><br />
         <hr />
 
         <label for="Gender">Gender</label>
-        <select name="Gender" id="Gender">
+        <select name="Gender" id="Gender" required>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
           <option value="Others">Others</option>
         </select>
 
         <label for="Dob">Date of Birth</label>
-        <input type="Date" name="Dob" id="Dob" /><br />
+        <input type="Date" name="Dob" id="Dob" required/><br />
         <hr />
 
         <label for="Email">Email Address</label>
-        <input type="email" name="email" id="email" />
+        <input type="email" name="email" id="email"placeholder="Enter Email Address" required />
 
         <label for="Education">Education</label>
         <select name="Education" id="Education">
@@ -52,7 +52,7 @@
         ><br />
 
         <label for="Country">Country</label>
-        <select name="Country" id="Country">
+        <select name="Country" id="Country"required></select>
           <option value="" disabled="disabled" selected="selected">
             Please select a country of residence
           </option>
@@ -590,29 +590,29 @@
         </select>
 
         <label for="State">State/City of Residence</label>
-        <input type="text" name="State" id="State" /><br />
+        <input type="text" name="State" id="State" placeholder="Enter your State of Residence" required/><br />
         <hr />
 
         <label for="Employment">Employment Status</label>
-        <select name="Employment" id="Employment">
+        <select name="Employment" id="Employment"required>
           <option value="Employed">Employed</option>
           <option value="Unemployed">Unemployed</option>
           <option value="Self Employed">Self Employed</option>
         </select>
 
         <label for="Phone Number">Phone Number</label>
-        <input type="number" name="Phone Number" id="Phone Number" /><br />
+        <input type="number" name="Phone Number" id="Phone Number" required/><br />
         <hr />
 
         <label for="For School">For School</label>
-        <select name="For School" id="For School">
+        <select name="For School" id="For School" required>
           <option value="School Of enginneering">School Of enginneering</option>
           <option value="School Of Data">School Of Data</option>
           <option value="School of Design">School of Design</option>
         </select>
 
         <label for="Course">Course</label>
-        <select name="Course" id="Course">
+        <select name="Course" id="Course"required>
           <option value="Frontend engineering">Frontend engineering</option>
           <option value="Backend engineering">Backend Engineering</option>
           <option value="Cloud Engineering">Cloud Engineering</option>
@@ -623,7 +623,7 @@
         <hr />
 
         <label for="Source">How did you hear about us?</label>
-        <select name="Source" id="Source">
+        <select name="Source" id="Source"required></select>
           <option value="Twitter">Twitter</option>
           <option value="Facebook">Facebook</option>
           <option value="LinkedIn">LinkedIn</option>
@@ -641,10 +641,11 @@
           type="text"
           name="Scholarship Discount code"
           id="Scholarship Discount Code"
+          placeholder="Scholarship or student ID"
         />
         <hr />
 
-        <p>
+        <p> 
           By clicking continue, I agree to <a href="#">Terms of Use</a> and
           acknowledge that I have read the <a href="#">Privacy Policy</a>
         </p>
